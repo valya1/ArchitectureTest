@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/science_graph"
+    app:startDestination="@id/scienceFragment1">
+
+    <fragment
+        android:id="@+id/scienceFragment1"
+        android:name="com.example.science.ScienceFragment1"
+        android:label="ScienceFragment1">
+        <action
+            android:id="@+id/action_scienceFragment1_to_scienceFragment2"
+            app:destination="@id/scienceFragment2"
+            app:launchSingleTop="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/scienceFragment2"
+        android:name="com.example.science.science2.ScienceFragment2"
+        android:label="ScienceFragment2">
+        <argument
+            android:name="Science2Args"
+            app:argType="com.example.science.science2.ScienceFragment2$Args" />
+    </fragment>
+</navigation>

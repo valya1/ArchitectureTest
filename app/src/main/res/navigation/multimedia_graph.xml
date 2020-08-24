@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    android:id="@+id/multimedia_graph"
+    app:startDestination="@id/multimediaFragment1">
 
-    <include app:graph="@navigation/science_graph" />
-    <include app:graph="@navigation/multimedia_graph" />
-
-
-    <action
-        android:id="@+id/action_global_multimedia_graph"
-        app:destination="@id/multimedia_graph">
-
+    <fragment
+        android:id="@+id/multimediaFragment1"
+        android:name="com.example.multimedia.MultimediaFragment1"
+        android:label="MultimediaFragment1">
         <argument
             android:name="Args"
             app:argType="com.example.multimedia.MultimediaFragment1$Args" />
-
-    </action>
-
+    </fragment>
 </navigation>

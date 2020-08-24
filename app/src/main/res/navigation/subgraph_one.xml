@@ -2,17 +2,25 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/subgraph_one"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/dialogFragmentChild1">
     <fragment
-        android:id="@+id/firstFragment"
-        android:name="com.example.androidarchtesting.FirstFragment"
-        android:label="FirstFragment" >
+        android:id="@+id/dialogFragmentChild1"
+        android:name="com.example.androidarchtesting.dialogFragment.DialogFragmentChild1"
+        android:label="DialogFragmentChild1" >
         <action
-            android:id="@+id/action_firstFragment_to_thirdFragment3"
-            app:destination="@id/thirdFragment3" />
+            android:id="@+id/action_dialogFragmentChild1_to_dialogFragmentChild2"
+            app:destination="@id/dialogFragmentChild2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:launchSingleTop="true" />
+        <argument
+            android:name="name"
+            app:argType="string" />
     </fragment>
     <fragment
-        android:id="@+id/thirdFragment3"
-        android:name="com.example.androidarchtesting.ThirdFragment"
-        android:label="ThirdFragment" />
+        android:id="@+id/dialogFragmentChild2"
+        android:name="com.example.androidarchtesting.dialogFragment.DialogFragmentChild2"
+        android:label="DialogFragmentChild2" />
 </navigation>
