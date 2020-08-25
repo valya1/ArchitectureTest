@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/science_graph"
+    android:id="@+id/tab_science"
     app:startDestination="@id/scienceFragment1">
 
     <fragment
@@ -20,5 +20,8 @@
         <argument
             android:name="Science2Args"
             app:argType="com.example.science.science2.ScienceFragment2$Args" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://kb.ru/123" />
     </fragment>
 </navigation>

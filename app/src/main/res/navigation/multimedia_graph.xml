@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/multimedia_graph"
+    android:id="@+id/tab_multimedia"
     app:startDestination="@id/multimediaFragment1">
 
     <fragment
         android:id="@+id/multimediaFragment1"
         android:name="com.example.multimedia.MultimediaFragment1"
         android:label="MultimediaFragment1">
-        <argument
-            android:name="Args"
-            app:argType="com.example.multimedia.MultimediaFragment1$Args" />
+<!--        <argument-->
+<!--            android:name="Args"-->
+<!--            app:argType="com.example.multimedia.MultimediaFragment1$Args" />-->
     </fragment>
 </navigation>

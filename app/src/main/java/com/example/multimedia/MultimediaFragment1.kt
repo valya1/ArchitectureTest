@@ -13,7 +13,7 @@ class MultimediaFragment1 : Fragment(R.layout.fragment_multimedia) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        multimediaMainText.text = navArgs<MultimediaFragment1Args>().value.args.text
+//        multimediaMainText.text = navArgs<MultimediaFragment1Args>().value.args.text
     }
 
     @Parcelize

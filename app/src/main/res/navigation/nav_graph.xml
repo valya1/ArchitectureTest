@@ -9,7 +9,7 @@
 
     <action
         android:id="@+id/action_global_multimedia_graph"
-        app:destination="@id/multimedia_graph">
+        app:destination="@id/tab_multimedia">
 
         <argument
             android:name="Args"
